@@ -8,7 +8,7 @@ import (
 
 
 func intDivision(numerator int, denominator int) (int, int, error) {
-	if(denominator == 0 || denominator > 12) {
+	if(denominator == 0) {
 		return 0,0, errors.New("Division by zero encountered")
 	}
 	val := numerator/denominator
